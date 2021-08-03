@@ -1,11 +1,20 @@
-def dummy():
-  print("Keep it logically awesome.")
+import random
+def main():
+    #   print("Keep it logically awesome.")
+    # LiorHashava = "Lior can be a bag full of dicks sometimes"
+    # print(LiorHashava)
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+    # get quoted
+    f = open("quotes.txt")
+    # read the file quotes
+    quotes = f.readlines()
+    f.close()
+    # print(quotes)
+    # print(quotes[0])
+    # print(quotes[-1])
+    last = len(quotes)-1
+    rnd = random.randint(0, last)
+    print(quotes[rnd])
 
-  #print(quotes)
-
-if __name__== "__main__":
-  dummy()
+if __name__ == "__main__":
+    main()
