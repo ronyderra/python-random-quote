@@ -10,11 +10,12 @@ def main():
     quotes = f.readlines()
     f.close()
     # print(quotes)
+    for line in quotes:print(line.strip())
     # print(quotes[0])
     # print(quotes[-1])
-    last = len(quotes)-1
-    rnd = random.randint(0, last)
-    print(quotes[rnd])
+    # last = len(quotes)-1
+    # rnd = random.randint(0, last)
+    # print(quotes[rnd] + quotes[2])
 
 if __name__ == "__main__":
     main()
